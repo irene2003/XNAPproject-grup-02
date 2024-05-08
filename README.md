@@ -31,6 +31,9 @@ To run the example code:
 python main.py
 ```
 
+## Bibliografia
+
+- https://towardsdatascience.com/how-do-neural-style-transfers-work-b76de101eb3
 
 
 ## Contributors
