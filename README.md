@@ -18,10 +18,23 @@ Aquests enllaços et portaran als repositoris de GitHub relacionats amb el proje
 ## Objectius
 
 
+
 ## Com funciona una NST?
+Les xarxes neuronals convolucionals (CNN) són el tipus de de xarxes neuronals més potent per a la classificació i l'anàlisi d'imatges. Les seves aplicacions han superat molts límits i s'ha demostrat que són l'element crític de moltes aplicacions habilitades per a l'aprenentatge profund d'avui en dia. A un nivell molt alt, les CNN poden aprendre les representacions a nivell de característiques internes de les imatges les quals s'alimenten. Són molt potents, i no només funcionen per a classificar imatges, sinó que també funcionen per la construcció d'imatges.
+
 Aquest projecte es tracta de generar imatges a partir d'una imatge amb contingut i una imatge amb un estil concret. Volem combinar-les de manera que el model entrenat generi una imatge que contingui el contingut de la imatge amb contingut i l'estil de la imatge de l'estil. Per tant, hem d'aconseguir un model amb el contingut i l'estil correctes. 
 
-Això ho podrem aconseguir a partir de CNN, Xarxes Neuronals Convolucionals. A mesura que més profunda és la capa que s'entrena i més filtres té, més característiques captura. Aquest procés també es pot inicialitzar amb l'ús d'una imatge amb soroll com a imatge inicial en la transferència d'estil neural per iniciar el procés de manera neutra, evitar òptims locals i donar flexibilitat als resultats finals. A través de l'optimització iterativa, aquesta imatge amb soroll es transforma progressivament per reflectir millor tant el contingut com l'estil de les imatges de referència.
+![Imatge1](Img1.png)
+
+**Figura 1**: Imatge esquerre - imatge contingut, imatge dreta - imatge estil.
+
+Per fer el procés de transferència de l'estil de la imatge estil a la imatge contingut la CNN s'entrena per optimitzar una funció de pèrdua (loss). Quan les imatges es "fusionen", un exemple d'output podria ser: 
+
+![Imatge2](Img2.png)
+
+Això ho podrem aconseguir, com ja hem dit, a partir de CNN, Xarxes Neuronals Convolucionals. A mesura que més profunda és la capa que s'entrena i més filtres té, més característiques captura. Aquest procés també es pot inicialitzar amb l'ús d'una imatge amb soroll com a imatge inicial en la transferència d'estil neural per iniciar el procés de manera neutra, evitar òptims locals i donar flexibilitat als resultats finals. A través de l'optimització iterativa, aquesta imatge amb soroll es transforma progressivament per reflectir millor tant el contingut com l'estil de les imatges de referència.
+
+És una eina molt útil per plasmar estils artístics determinats en qualsevol imatge. 
 
 ### Mètriques: càlcul de la loss
 En aquest cas, per avaluar l'eficiència del model, realment no es pot fer perquè és l'avaluació és subjectiva. Per estudiar el model, ens centrarem en la Loss, que mesura com de similar és la imatge de soroll random amb la imatge de contingut.***aixo ns si ho fa el model del starting point***
