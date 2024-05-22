@@ -29,3 +29,6 @@ Nou enfoc
 Agafar model inception al encode decode i despres amb la vgg mirem la similitud entre la imatge de contingut, d'estil i generada. 
 
 Pagina web "papers with code"
+
+
+## 22/5/2024
