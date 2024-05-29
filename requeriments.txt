@@ -8,4 +8,3 @@ tqdm
 opencv-python
 argparse
 matplotlib
-subprocess
