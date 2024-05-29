@@ -5,7 +5,7 @@ torchvision
 train
 utils
 tqdm
-cv2
+openvc-python
 os
 argparse
 matplotlib
